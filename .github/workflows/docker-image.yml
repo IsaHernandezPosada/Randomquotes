@@ -20,7 +20,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASS
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag tuusuario/randomquotes:latest
+      run: docker build . --file Dockerfile --tag isadevbella/randomquotes:latest
 
     - name: Docker Push
-      run: docker push tuusuario/randomquotes
+      run: docker push isadevbella/randomquotes
